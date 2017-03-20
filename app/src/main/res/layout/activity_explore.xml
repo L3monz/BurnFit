@@ -12,7 +12,7 @@
 
     <EditText
         android:text="@string/gymMembership"
-        android:hint="membership"
+        android:hint="@string/membership"
         android:inputType="text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
