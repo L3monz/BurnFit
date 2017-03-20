@@ -3,15 +3,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/foodItem"
-        android:icon="@drawable/food"
-        android:title="@string/food"
+        android:id="@+id/exerciseItem"
+        android:icon="@drawable/run"
+        android:title="@string/exercise"
         />
 
     <item
-        android:id="@+id/ExerciseItem"
-        android:icon="@drawable/run"
-        android:title="@string/exercise"
+        android:id="@+id/foodItem"
+        android:icon="@drawable/food"
+        android:title="@string/food"
         />
 
     <item

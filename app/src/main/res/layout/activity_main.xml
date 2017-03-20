@@ -7,21 +7,11 @@
     android:layout_height="match_parent"
     tools:context="com.brianlemons.burnfit.MainActivity">
 
-    <TextView
-        android:id="@+id/infoTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:textSize="24sp"
-        android:layout_gravity="center" />
-
-
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         >
-
 
         <View
             android:layout_width="match_parent"
@@ -37,9 +27,14 @@
             design:itemIconTint="@color/orange"
             design:itemTextColor="@color/orange"
             design:menu="@menu/menu_navigation" />
-        
+
+
     </FrameLayout>
 
-
+    <ListView
+        android:id="@+id/exerciseList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
 
 </android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="2dp">
+
+    <ImageView
+        android:id="@+id/exercisePicture"
+        android:layout_height="130dp"
+        android:layout_width="130dp"
+        android:paddingRight="2dp"
+        android:paddingLeft="2dp"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignLeft="@+id/exercisePicture"
+        android:layout_below="@+id/exercisePicture"
+        android:text="@string/txt"
+        android:textSize="16sp"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/exerciseInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:text="@string/txt"
+        android:textSize="18sp"
+        android:layout_toEndOf="@+id/exercisePicture" />
+
+</RelativeLayout>
