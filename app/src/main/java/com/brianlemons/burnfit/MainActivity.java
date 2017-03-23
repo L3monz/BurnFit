@@ -17,13 +17,15 @@ public class MainActivity extends AppCompatActivity {
 
 
     private static Integer [] exerciseImages = {
-            R.drawable.mountvernon, R.drawable.onelife, R.drawable.tridentfitness};
+            R.drawable.star,  R.drawable.chest, R.drawable.biceps,
+            R.drawable.calves,  R.drawable.quadriceps, R.drawable.back,
+            R.drawable.shoulders,  R.drawable.triceps,
+            R.drawable.hamstrings,  R.drawable.trapezuis, R.drawable.abs};
 
-    public static String [] exerciseDistance = {"0.2 miles away", "0.7 miles away", "2.0 miles"};
-
-    public static String [] exerciseInfo = {"Go for a walk or bike ride at Mount Vernon Trail.",
-            "Workout at Onelife Fitness Center in Alexandria, VA",
-            "Workout at Trident Crossfit Gym in Alexandria, VA"};
+    public static String [] exerciseInfo = {"Recommended\n Workout",
+            "Chest", "Biceps", "Calves", "Quadriceps", "Back",
+            "Shoulders", "Triceps", "Hamstrings",
+            "Trapezius", "Abs"};
 
 
     @Override
@@ -32,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigationView);
-        ExerciseListAdapter exerciseListAdapter = new ExerciseListAdapter(this,exerciseDistance,exerciseImages,exerciseInfo);
+        ExerciseListAdapter exerciseListAdapter = new ExerciseListAdapter(this,exerciseImages,exerciseInfo);
         exerciseLv = (ListView) findViewById(R.id.exerciseList);
         exerciseLv.setAdapter(exerciseListAdapter);
 

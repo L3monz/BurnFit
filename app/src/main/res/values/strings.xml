@@ -8,7 +8,7 @@
     <string name="calorieCount">Calorie Count</string>
     <string name="calorieIntake">Enter your calorie intake for today</string>
     <string name="workoutChoice">Workout Choice</string>
-    <string name="workoutSelect">What kind of workout would you like to do</string>
+    <string name="workoutSelect">What Kind Of Workout Would You Like To Do?</string>
     <string name="gymMembership">Do you have a gym membership already?</string>
     <string name="membership">If so, enter in the name of your gym, otherwise "no"</string>
     <string name="activityChoice">Is there a particular activity you want to do today?</string>

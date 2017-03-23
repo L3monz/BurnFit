@@ -17,17 +17,16 @@ import android.widget.TextView;
 public class ExerciseListAdapter extends ArrayAdapter<String> {
 
     private final Activity context;
-    private final String[] exerciseDistance;
     private final Integer[] exerciseImages;
     private final String[] exerciseInfo;
+    private boolean flag = false;
 
 
 
-    public ExerciseListAdapter(Activity context, String[] exerciseDistance, Integer[] exerciseImages,
+    public ExerciseListAdapter(Activity context, Integer[] exerciseImages,
                                String[] exerciseInfo) {
-        super(context,R.layout.exercise_item,exerciseDistance);
+        super(context,R.layout.exercise_item, exerciseInfo);
         this.context = context;
-        this.exerciseDistance = exerciseDistance;
         this.exerciseImages = exerciseImages;
         this.exerciseInfo = exerciseInfo;
 
@@ -39,11 +38,9 @@ public class ExerciseListAdapter extends ArrayAdapter<String> {
 
         LayoutInflater inflater = context.getLayoutInflater();
         View exerciseView = inflater.inflate(R.layout.exercise_item, null, true);
-        TextView distance = (TextView) exerciseView.findViewById(R.id.distance);
         ImageView image = (ImageView) exerciseView.findViewById(R.id.exercisePicture);
         TextView info = (TextView) exerciseView.findViewById(R.id.exerciseInfo);
 
-        distance.setText(exerciseDistance[position]);
         image.setImageResource(exerciseImages[position]);
         info.setText(exerciseInfo[position]);
         return exerciseView;
