@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public static Integer [] exerciseImages = {
-            R.drawable.star,  R.drawable.chest, R.drawable.biceps,
+            R.drawable.goldstar,  R.drawable.chest, R.drawable.biceps,
             R.drawable.calves,  R.drawable.quadriceps, R.drawable.back,
             R.drawable.shoulders,  R.drawable.triceps,
             R.drawable.hamstrings,  R.drawable.trapezuis, R.drawable.abs};
@@ -38,7 +38,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigationView);
+        /* Use this to switch between tabs. */
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                if (item.getItemId() == R.id.exerciseItem) {
+                } else if (item.getItemId() == R.id.foodItem) {
+                } else if (item.getItemId() == R.id.exploreItem) {
+                } else if (item.getItemId() == R.id.funItem) {
+                }
+                return false;
+            }
+        });
+
         ExerciseListAdapter exerciseListAdapter = new ExerciseListAdapter(this,exerciseImages,exerciseInfo);
+
         exerciseLv = (ListView) findViewById(R.id.exerciseList);
         exerciseLv.setAdapter(exerciseListAdapter);
         exerciseLv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -48,7 +63,18 @@ public class MainActivity extends AppCompatActivity {
                     Intent newIntent = new Intent(getApplicationContext(), ExerciseRecommendations.class);
                     startActivity(newIntent);
 
-                }else{
+
+                }else if(position == 1){
+                    Intent newIntent = new Intent(getApplicationContext(), ExerciseChest.class);
+                    startActivity(newIntent);
+
+                }else if(position == 2){
+                    Intent newIntent = new Intent(getApplicationContext(), ExerciseBicep.class);
+                    startActivity(newIntent);
+                }
+
+                else{
+
                     Toast.makeText(MainActivity.this,"Under Construction", Toast.LENGTH_LONG).show();
 
                 }

@@ -21,10 +21,9 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".ExerciseRecommendations"></activity>
-        <activity
-            android:name="com.google.android.youtube.api.StandalonePlayerActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            />
+        <activity android:name=".ExerciseBicep"></activity>
+        <activity android:name=".ExerciseChest"></activity>
+
     </application>
 
 </manifest>
