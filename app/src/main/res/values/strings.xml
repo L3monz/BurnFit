@@ -13,4 +13,8 @@
     <string name="membership">If so, enter in the name of your gym, otherwise "no"</string>
     <string name="activityChoice">Is there a particular activity you want to do today?</string>
     <string name="activity">If so, enter in the name</string>
+    <string name="video_list_title">Title</string>
+    <string name="DEVELOPER_KEY">AIzaSyAa_BhMdsxI7jmSOmptLnYojxD0DN6VNgY</string>
+
+
 </resources>

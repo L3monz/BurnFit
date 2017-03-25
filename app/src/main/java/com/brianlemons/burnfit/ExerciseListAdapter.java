@@ -19,9 +19,6 @@ public class ExerciseListAdapter extends ArrayAdapter<String> {
     private final Activity context;
     private final Integer[] exerciseImages;
     private final String[] exerciseInfo;
-    private boolean flag = false;
-
-
 
     public ExerciseListAdapter(Activity context, Integer[] exerciseImages,
                                String[] exerciseInfo) {
