@@ -15,6 +15,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    //make fragment or add photos for food
     private BottomNavigationView bottomNavigationView;
     TextView infoTextView;
     ListView exerciseLv;
