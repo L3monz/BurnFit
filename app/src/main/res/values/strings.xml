@@ -15,6 +15,7 @@
     <string name="activity">If so, enter in the name</string>
     <string name="video_list_title">Title</string>
     <string name="DEVELOPER_KEY">AIzaSyAa_BhMdsxI7jmSOmptLnYojxD0DN6VNgY</string>
-
-
+    <string name="foodConsDets">Enter in your food consumption details for today</string>
+    <string name="foodAllergy">List any known food allergies you have; say none if you have none</string>
+    <string name="dietPlanDetails">Enter details of your diet plan, if you have one; say "none" if you don't</string>
 </resources>
