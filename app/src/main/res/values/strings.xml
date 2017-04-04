@@ -18,4 +18,5 @@
     <string name="foodConsDets">Enter in your food consumption details for today</string>
     <string name="foodAllergy">List any known food allergies you have; say none if you have none</string>
     <string name="dietPlanDetails">Enter details of your diet plan, if you have one; say "none" if you do not</string>
+    <string name="nextPageFood">Done Entering Info</string>
 </resources>
