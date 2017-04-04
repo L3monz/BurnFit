@@ -7,5 +7,5 @@ import android.support.v7.app.AppCompatActivity;
  */
 
 public class FoodActivity extends AppCompatActivity {
-
+    //TODO food suggestions and recipes
 }
