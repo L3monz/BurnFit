@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (item.getItemId() == R.id.exerciseItem) {
                 } else if (item.getItemId() == R.id.foodItem) {
+                    //start the food fragment
                 } else if (item.getItemId() == R.id.exploreItem) {
                 } else if (item.getItemId() == R.id.funItem) {
                 }

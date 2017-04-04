@@ -14,7 +14,7 @@ import android.widget.Button;
 
 public class FoodFragment extends Fragment{
     //TODO get the activity here and redirect to the page
-    // TODO with the suggestions and recipe
+    // with the suggestions and recipe
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -29,7 +29,9 @@ public class FoodFragment extends Fragment{
         nextPageButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                //Intent i = new Intent(FoodFragment.this, FoodActivity.class);
+                //to fix
+                Intent i = new Intent(getActivity(), FoodActivity.class);
+                startActivity(i);
             }
         });
         return view;

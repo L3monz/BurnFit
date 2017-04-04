@@ -3,6 +3,8 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
+    <!-->Make the image from the drawable folder appear here
+    as well as a small explanation off the suggestion, and
+    maybe also a recipe<-->
 
 </LinearLayout>
