@@ -39,7 +39,7 @@ public class ExerciseRecommendations extends AppCompatActivity {
 
         ExerciseVideoAdapter exerciseListAdapter = new ExerciseVideoAdapter(this,exerciseDescription,exerciseThumbnail);
         workOut = (TextView) findViewById(R.id.workout);
-        workOut.setText("Recommendations");
+        workOut.setText("Beginner Workout");
         exerciseLv = (ListView) findViewById(R.id.exerciseVideos);
         exerciseLv.setAdapter(exerciseListAdapter);
         exerciseLv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
