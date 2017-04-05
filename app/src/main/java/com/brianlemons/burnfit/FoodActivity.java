@@ -16,16 +16,16 @@ public class FoodActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_food);
+        setContentView(R.layout.activity_food_suggestions);
 
-        Button nextPageButton = (Button) findViewById(R.id.nextPageFood);
+        /*Button nextPageButton = (Button) findViewById(R.id.nextPageFood);
         nextPageButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 //to fix
-                Intent i = new Intent(getApplicationContext(), FoodActivity.class);
+                //Intent i = new Intent(getApplicationContext(), FoodActivity.class);
             }
-        });
+        });*/
     }
 
 }

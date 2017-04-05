@@ -22,7 +22,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="600"
+        android:text="@string/hardCodeInputCalories"
         android:inputType="number"/>
 
     <TextView
@@ -35,8 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="text"
-        android:text="Cereal Bar
-        Rice, yogurt, pulverized tomato extract"/>
+        android:text="@string/hardCodeInputCons"/>
 
 
     <TextView
@@ -49,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="text"
-        android:text="none"/>
+        android:text="@string/none"/>
 
     <TextView
         android:text="@string/dietPlanDetails"
@@ -61,7 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="text"
-        android:text="Trying to eat less fat and more food that helps build strength"/>
+        android:text="@string/hardCodeInputDiet"/>
 
     <Button
         android:layout_width="wrap_content"

@@ -20,4 +20,8 @@
     <string name="dietPlanDetails">Enter details of your diet plan, if you have one; say "none" if you do not</string>
     <string name="nextPageFood">Done Entering Info</string>
     <string name="title_activity_food_manager">FoodManager</string>
+    <string name="hardCodeInputCalories">600</string>
+    <string name="hardCodeInputCons">Breakfast: Cereal Bar.\nLunch: Rice, yogurt, pulverized tomato extract.</string>
+    <string name="none">none</string>
+    <string name="hardCodeInputDiet">Trying to eat less fat and more food that helps build strength</string>
 </resources>
