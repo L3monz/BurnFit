@@ -25,6 +25,7 @@
         android:textColor="@color/black"/>
 
     <TextView
+        android:id="@+id/recipeIdea"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/recipeIdea"
@@ -34,9 +35,10 @@
 
     <!--To Do-->
     <TextView
+        android:id="@+id/ingredients"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/foodSuggestion"
+        android:text="@string/ingredients"
         android:textColor="@color/darkOrchid"/>
 
     <LinearLayout
