@@ -24,4 +24,7 @@
     <string name="hardCodeInputCons">Breakfast: Cereal Bar.\nLunch: Rice, yogurt, pulverized tomato extract.</string>
     <string name="none">none</string>
     <string name="hardCodeInputDiet">Trying to eat less fat and more food that helps build strength</string>
+    <string name="foodSuggestion">Since you calorie intake so far today is between 500 and 750, we recommend that you eat
+    some type of vegetable dish. Maybe eat some eggplant since it will help you develop strength and has a lot of nutrients
+    that you need.</string>
 </resources>
