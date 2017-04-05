@@ -8,13 +8,12 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:hardwareAccelerated="false"
         android:largeHeap="true"
-        >
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,10 +22,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".ExerciseRecommendations"></activity>
-        <activity android:name=".ExerciseBicep"></activity>
-        <activity android:name=".ExerciseChest"></activity>
-
+        <activity android:name=".ExerciseRecommendations" />
+        <activity android:name=".ExerciseBicep" />
+        <activity android:name=".ExerciseChest" />
+        <activity android:name=".FoodActivity" />
+        <activity
+            android:name=".FoodManager"
+            android:label="@string/title_activity_food_manager"></activity>
     </application>
 
 </manifest>

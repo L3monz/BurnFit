@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 if (item.getItemId() == R.id.exerciseItem) {
                 } else if (item.getItemId() == R.id.foodItem) {
                     //start the food activity
-                    Intent i = new Intent(getApplicationContext(), FoodActivity.class);
+                    Intent i = new Intent(getApplicationContext(), FoodManager.class);
                     startActivity(i);
                 } else if (item.getItemId() == R.id.exploreItem) {
                 } else if (item.getItemId() == R.id.funItem) {
