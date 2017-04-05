@@ -6,5 +6,7 @@
     <color name="orange">#EF8319</color>
     <color name="black">#000000</color>
     <color name="white">#ffffff</color>
+    <color name="darkerOrchid">#68228B</color>
+    <color name="darkOrchid">#9A32CD</color>
 
 </resources>
