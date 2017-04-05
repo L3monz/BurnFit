@@ -23,7 +23,7 @@ public class FoodFragment extends Fragment{
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        View view = inflater.inflate(R.layout.fragment_food, container, false);
+        View view = inflater.inflate(R.layout.activity_food, container, false);
 
         Button nextPageButton = (Button) view.findViewById(R.id.nextPageFood);
         nextPageButton.setOnClickListener(new View.OnClickListener(){
