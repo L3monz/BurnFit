@@ -1,15 +1,12 @@
 package com.brianlemons.burnfit;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.internal.BottomNavigationItemView;
 import android.support.design.internal.BottomNavigationMenuView;
 import android.support.design.widget.BottomNavigationView;
-import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -69,6 +66,9 @@ public class MainActivity extends AppCompatActivity {
 
                 } else if (item.getItemId() == R.id.exploreItem) {
                 } else if (item.getItemId() == R.id.funItem) {
+                    Intent intent = new Intent(getApplicationContext(), Events.class);
+                    startActivity(intent);
+                    overridePendingTransition(0,0);
                 }
                 return false;
             }
