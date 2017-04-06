@@ -64,6 +64,9 @@ public class FoodFragment extends Fragment{
                 } else if (item.getItemId() == R.id.foodItem) {
                 } else if (item.getItemId() == R.id.exploreItem) {
                 } else if (item.getItemId() == R.id.funItem) {
+                    Intent intent = new Intent(getActivity(), Events.class);
+                    startActivity(intent);
+                    ((Activity) getActivity()).overridePendingTransition(0,0);
                 }
                 return false;
             }
