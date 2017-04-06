@@ -31,6 +31,10 @@
         <activity android:name=".ExerciseBicep"/>
         <activity android:name=".ExerciseChest"/>
         <activity android:name=".FoodActivity"/>
+        <activity android:name=".ExploreMain"/>
+        <activity android:name=".ExploreEatOutRight"/>
+        <activity android:name=".Distance"/>
+        <activity android:name=".Cost"/>
         <activity
             android:name=".FoodManager"
             android:label="@string/title_activity_food_manager"/>
