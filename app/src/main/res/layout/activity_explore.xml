@@ -4,18 +4,40 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:text="@string/explore"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:layout_weight="0.51"
+        android:textStyle="bold"
+        android:textColor="@color/black"
 
-    <EditText
-        android:text="@string/gymMembership"
-        android:hint="@string/membership"
-        android:inputType="text"
-        android:layout_width="wrap_content"
+        android:textAllCaps="true"
+        android:textSize="40dp"
+        android:text="@string/explore" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/membership"/>
+        android:layout_weight="1.50"
+        android:textStyle="bold"
+        android:textColor="@color/orange"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="Eat Out Right" />
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.50"
+        android:textStyle="bold"
+        android:textColor="@color/orange"
+        android:textSize="28dp"
+        android:gravity= "center"
+        android:text="Fun Workout Locations \n And Events" />
 
 </LinearLayout>
