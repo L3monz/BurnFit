@@ -36,8 +36,11 @@ public class FoodFragment extends Fragment{
 
         Button nextPageButton = (Button) view.findViewById(R.id.nextPageFood);
         BottomNavigationView bottomNavigationView = (BottomNavigationView) view.findViewById(R.id.bottomNavigationView);
-        bottomNavigationView.getMenu().getItem(1).setChecked(true);
         removeShiftMode(bottomNavigationView);
+        bottomNavigationView.getMenu().getItem(0).setChecked(false);
+        bottomNavigationView.getMenu().getItem(1).setChecked(true);
+        bottomNavigationView.getMenu().getItem(2).setChecked(false);
+        bottomNavigationView.getMenu().getItem(3).setChecked(false);
 
 
         nextPageButton.setOnClickListener(new View.OnClickListener(){
