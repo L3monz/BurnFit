@@ -23,41 +23,7 @@ public class Distance extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_explore_eat_out_right);
+        setContentView(R.layout.activity_distance);
 
-
-
-
-        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById
-                (R.id.bottomNavigationView);
-        removeShiftMode(bottomNavigationView);
-        bottomNavigationView.getMenu().getItem(0).setChecked(false);
-        bottomNavigationView.getMenu().getItem(1).setChecked(false);
-        bottomNavigationView.getMenu().getItem(2).setChecked(true);
-        bottomNavigationView.getMenu().getItem(3).setChecked(false);
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
-                if (item.getItemId() == R.id.exerciseItem) {
-                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                    startActivity(intent);
-                    overridePendingTransition(0, 0);
-                } else if (item.getItemId() == R.id.foodItem) {
-                    //start the food activity
-                    Intent i = new Intent(getApplicationContext(), FoodManager.class);
-                    startActivity(i);
-                    overridePendingTransition(0, 0);
-
-                } else if (item.getItemId() == R.id.exploreItem) {
-                } else if (item.getItemId() == R.id.funItem) {
-                    Intent intent = new Intent(getApplicationContext(), Events.class);
-                    startActivity(intent);
-                    overridePendingTransition(0, 0);
-                }
-                return false;
-            }
-        });
     }
 }

@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -60,14 +61,15 @@ public class ExploreEatOutRight extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_explore_eat_out_right);
 
-        EatOutBasedonDistance = (CheckBox) findViewById(R.id.distance_checkBox);
-        EatOutBasedonCost = (CheckBox) findViewById(R.id.cost_checkBox);
+        EatOutBasedonDistance = (Button) findViewById(R.id.distance_checkBox);
+        EatOutBasedonCost = (Button) findViewById(R.id.cost_checkBox);
 
 
         EatOutBasedonDistance.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ExploreEatOutRight.this,Distance.class));
+                Intent intent = new Intent(getApplicationContext(), Distance.class);
+                startActivity(intent);
                 overridePendingTransition(0,0);
             }
         });
@@ -75,14 +77,11 @@ public class ExploreEatOutRight extends AppCompatActivity {
         EatOutBasedonCost.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ExploreEatOutRight.this,Cost.class));
+                Intent intent = new Intent(getApplicationContext(), Cost.class);
+                startActivity(intent);
                 overridePendingTransition(0,0);
             }
         });
-
-
-
-
 
 
 
@@ -91,8 +90,8 @@ public class ExploreEatOutRight extends AppCompatActivity {
         removeShiftMode(bottomNavigationView);
         bottomNavigationView.getMenu().getItem(0).setChecked(false);
         bottomNavigationView.getMenu().getItem(1).setChecked(false);
-        bottomNavigationView.getMenu().getItem(2).setChecked(false);
-        bottomNavigationView.getMenu().getItem(3).setChecked(true);
+        bottomNavigationView.getMenu().getItem(2).setChecked(true);
+        bottomNavigationView.getMenu().getItem(3).setChecked(false);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

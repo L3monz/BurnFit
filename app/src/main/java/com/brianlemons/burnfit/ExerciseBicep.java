@@ -59,6 +59,9 @@ public class ExerciseBicep extends AppCompatActivity {
                     overridePendingTransition(0,0);
 
                 } else if (item.getItemId() == R.id.exploreItem) {
+                    Intent i = new Intent(getApplicationContext(), ExploreMain.class);
+                    startActivity(i);
+                    overridePendingTransition(0,0);
                 } else if (item.getItemId() == R.id.funItem) {
                     Intent intent = new Intent(getApplicationContext(), Events.class);
                     startActivity(intent);

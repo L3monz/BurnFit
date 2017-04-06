@@ -31,12 +31,23 @@ public class ExploreMain extends AppCompatActivity {
 
         eat = (TextView) findViewById(R.id.textView);
 
+        events = (TextView) findViewById(R.id.textView2);
+
+
 
 
         eat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(ExploreMain.this,ExploreEatOutRight.class));
+                overridePendingTransition(0,0);
+            }
+        });
+
+        events.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ExploreMain.this,Events.class));
                 overridePendingTransition(0,0);
             }
         });
