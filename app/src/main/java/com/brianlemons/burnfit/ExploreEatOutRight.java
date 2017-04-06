@@ -5,8 +5,10 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -18,14 +20,71 @@ import static com.brianlemons.burnfit.FoodActivity.removeShiftMode;
 
 public class ExploreEatOutRight extends AppCompatActivity {
 
+    int checkAccumulator = 0;
     private TextView mTextMessage;
     public ListView listViewEvents;
-    public TextView eat, events;
+    public TextView EatOutBasedonDistance, EatOutBasedonCost;
+
+//
+//    public View getView(int position, View convertView, ViewGroup parent) {
+//        LayoutInflater inflater = LayoutInflater.from(getContext());
+//        View customView = inflater.inflate(R.layout.row_layout1, parent, false);
+//        String stringelement = getItem(position);
+//        TextView Text = (TextView) customView.findViewById(R.id.textelement);
+//
+//        CheckBox checkBox1 = (CheckBox) customView.findViewById(R.id.);
+//        CheckBox checkBox2 = (CheckBox) customView.findViewById(R.id.Checkbox2);
+//
+//        CompoundButton.OnCheckedChangeListener checkListener = new CompoundButton.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+//                countCheck(isChecked);
+//                Log.i("MAIN", checkAccumulator + "");
+//            }
+//        };
+//
+//        checkBox1.setOnCheckedChangeListener(checkListener);
+//        checkBox2.setOnCheckedChangeListener(checkListener);
+//
+//        Text.setText(stringelement);
+//        return customView;
+//    }
+//
+//    private void countCheck(boolean isChecked) {
+//
+//        checkAccumulator += isChecked ? 1 : -1 ;
+//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_explore_events);
+        setContentView(R.layout.activity_explore_eat_out_right);
+
+        EatOutBasedonDistance = (CheckBox) findViewById(R.id.distance_checkBox);
+        EatOutBasedonCost = (CheckBox) findViewById(R.id.cost_checkBox);
+
+
+        EatOutBasedonDistance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ExploreEatOutRight.this,Distance.class));
+                overridePendingTransition(0,0);
+            }
+        });
+
+        EatOutBasedonCost.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ExploreEatOutRight.this,Cost.class));
+                overridePendingTransition(0,0);
+            }
+        });
+
+
+
+
+
+
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById
                 (R.id.bottomNavigationView);

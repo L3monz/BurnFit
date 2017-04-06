@@ -5,8 +5,10 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -16,30 +18,11 @@ import static com.brianlemons.burnfit.FoodActivity.removeShiftMode;
  * Created by lidya on 4/6/2017.
  */
 
-public class ExploreMain extends AppCompatActivity {
-    private TextView mTextMessage;
-    public ListView listViewEvents;
-    public TextView eat, events;
-
-
-
+public class Cost extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_explore);
-
-
-        eat = (TextView) findViewById(R.id.textView);
-
-
-
-        eat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(ExploreMain.this,ExploreEatOutRight.class));
-                overridePendingTransition(0,0);
-            }
-        });
+        setContentView(R.layout.activity_explore_eat_out_right);
 
 
 
@@ -59,22 +42,21 @@ public class ExploreMain extends AppCompatActivity {
                 if (item.getItemId() == R.id.exerciseItem) {
                     Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(intent);
-                    overridePendingTransition(0,0);
+                    overridePendingTransition(0, 0);
                 } else if (item.getItemId() == R.id.foodItem) {
                     //start the food activity
                     Intent i = new Intent(getApplicationContext(), FoodManager.class);
                     startActivity(i);
-                    overridePendingTransition(0,0);
+                    overridePendingTransition(0, 0);
 
                 } else if (item.getItemId() == R.id.exploreItem) {
                 } else if (item.getItemId() == R.id.funItem) {
                     Intent intent = new Intent(getApplicationContext(), Events.class);
                     startActivity(intent);
-                    overridePendingTransition(0,0);
+                    overridePendingTransition(0, 0);
                 }
                 return false;
             }
         });
     }
-
 }
