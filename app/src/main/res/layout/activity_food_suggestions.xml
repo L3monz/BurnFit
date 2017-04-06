@@ -37,6 +37,13 @@
         android:text="@string/ingredients"
         android:textColor="@color/darkOrchid"/>
 
+    <TextView
+        android:id="@+id/process"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/process"
+        android:textColor="@color/darkOrchid"/>
+
     <LinearLayout
         android:id="@+id/LinearLayout"
         android:layout_width="wrap_content"
