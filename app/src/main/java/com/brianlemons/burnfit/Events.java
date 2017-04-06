@@ -66,6 +66,9 @@ public class Events extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
                 if (item.getItemId() == R.id.exerciseItem) {
+                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                    startActivity(intent);
+                    overridePendingTransition(0,0);
                 } else if (item.getItemId() == R.id.foodItem) {
                     //start the food activity
                     Intent i = new Intent(getApplicationContext(), FoodManager.class);
