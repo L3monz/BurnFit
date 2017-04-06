@@ -100,10 +100,11 @@ public class SignUp extends Activity implements LoaderCallbacks<Cursor> {
 
         heightTxt = (TextView) findViewById(R.id.txt_height);
         heightBar = (SeekBar) findViewById(R.id.seekbar_height);
+        heightTxt.setText("4' 0");
         heightBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                heightTxt.setText( (i / 12) + "' " + (i % 12) + "\"");
+                heightTxt.setText( (i / 12 + 4) + "' " + (i % 12) + "\"");
             }
 
             @Override
