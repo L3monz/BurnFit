@@ -27,15 +27,14 @@ public class MainActivity extends AppCompatActivity {
 
 
     public static Integer [] exerciseImages = {
-            R.drawable.goldstar,  R.drawable.chest, R.drawable.biceps,
-            R.drawable.calves,  R.drawable.quadriceps, R.drawable.back,
-            R.drawable.shoulders,  R.drawable.triceps,
-            R.drawable.hamstrings,  R.drawable.trapezuis, R.drawable.abs};
+            R.drawable.goldstar, R.drawable.abs, R.drawable.biceps, R.drawable.calves,
+            R.drawable.chest, R.drawable.hamstrings, R.drawable.quadriceps,
+            R.drawable.shoulders, R.drawable.trapezuis, R.drawable.triceps};
 
-    public static String [] exerciseInfo = {"Recommended\n Workout",
-            "Chest", "Biceps", "Calves", "Quadriceps", "Back",
-            "Shoulders", "Triceps", "Hamstrings",
-            "Trapezius", "Abs"};
+    public static String [] exerciseInfo = {"Recommended\n Workout", "Abs",
+            "Biceps", "Calves", "Chest",  "Hamstrings", "Quadriceps",
+            "Shoulders", "Trapezius", "Triceps",
+            };
 
 
     @Override
