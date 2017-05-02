@@ -32,12 +32,13 @@ import java.lang.reflect.Field;
 public class ExerciseRecommendations extends AppCompatActivity {
 
     public static String [] exerciseDescription = {
-            "Bench Press\nSets:3 Reps:10", "Machine Shoulder Press\nSets:3 Reps:10",
-            "Tricep Pushdown\nSets:3 Reps:12",  "Push-Ups\nSets:3 Reps:10",
-            "Elliptical Trainer\nSets:1 Reps:20 minutes"};
+            "Bench Press\nSets:3 Reps:10", "Elliptical Trainer\nSets:1 Reps:20 minutes",
+            "Push-Ups\nSets:3 Reps:10", "Machine Shoulder Press\nSets:3 Reps:10",
+            "Tricep Pushdown\nSets:3 Reps:12"
+            };
 
-    public static String [] exerciseThumbnail= {"heSumeWiFig",
-            "dxPWKja9j68", "plcA3Q-9RzI", "RgL5HFny_kA", "mNM01g9wLy4"};
+    public static String [] exerciseThumbnail= {"heSumeWiFig", "mNM01g9wLy4", "RgL5HFny_kA",
+            "dxPWKja9j68", "plcA3Q-9RzI" };
     ListView exerciseLv;
     TextView workOut;
 

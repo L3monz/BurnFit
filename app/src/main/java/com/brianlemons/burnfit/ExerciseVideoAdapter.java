@@ -75,7 +75,10 @@ public class ExerciseVideoAdapter extends ArrayAdapter<String> implements YouTub
 
     @Override
     public void onInitializationFailure(YouTubeThumbnailView thumbnailView, YouTubeInitializationResult errorReason) {
-        final String errorMessage = errorReason.toString();
+        String errorMessage = errorReason.toString();
+        if(errorMessage == "SERVICE_MISSING"){
+            errorMessage = "User Needs YouTube App.";
+        }
         Toast.makeText(context, errorMessage, Toast.LENGTH_LONG).show();
     }
 }
